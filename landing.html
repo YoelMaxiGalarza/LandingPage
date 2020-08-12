@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="landing.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- User Story #1: My product landing page should have a header element with a corresponding id="header".-->
+    <header id="header">
+        <div class="header-image">
+            <img id="header-img" src="https://pogopedia.com.ar/img/articulos/qlGE0LTBcnJlbPHvOCe2fZh45aV79UYhMs7.png" alt="">
+        </div>
+        <nav id="nav-bar">
+            <div class="imagelogo-div">
+                <!-- User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here.-->
+                <img class="brand" src="http://maximusfestival.com.ar/img/logo_brand_plain.png" alt="maximus-brand" id="header-image">
+            </div>
+            <!-- User Story #3: Within the #header element I can see a nav element with a corresponding id="nav-bar".-->
+
+            <!-- User Story #4: I can see at least three clickable elements inside the nav element, each with the class nav-link.-->
+            <!-- User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.-->
+            <ul>
+                <li>
+                    <a href="#footer" class="nav-link">Tickets</a>
+                </li>
+                <li>
+                    <a href="#stages" class="nav-link">Stages</a>
+                </li>
+                <li>
+                    <a href="#video" class="nav-link">Resume</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="video-div">
+        <!-- User Story #6: I can watch an embedded product video with id="video". -->
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/eFRpI3M-ym8" allowfullscreen></iframe>
+    </div>
+    <div class="email-div">
+        <!-- User Story #7: My landing page has a form element with a corresponding id="form". -->
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <!-- User Story #8: Within the form, there is an input field with id="email" where I can enter an email address.
+                User Story #9: The #email input field should have placeholder text to let the user know what the field is for.
+                User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address. -->
+            <label class="email-label" for="email">Suscribe to our newslestter:</label>
+            <input type="email" name="email" id="email" placeholder="Email:">
+            <!--User Story #11: Within the form, there is a submit input with a corresponding id="submit".
+                User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit). -->
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+    <div class="stages" id="stages">
+        <img src="http://maximusfestival.com.ar/img/schedule_2017.jpg" alt="">
+    </div>
+    <section id="pricing">
+        <div class="product" id="tenor">
+            <div class="level">Maximus</div>
+            <h2>$2400</h2>
+            <ol>
+                <li>RED FANG</li>
+                <li>BOHSE ONKELZ</li>
+                <li>ROB ZOMBIE</li>
+                <li>SLAYER</li>
+                <li>LINKIN PARK</li>
+            </ol>
+            <button class="btn">Select</button>
+        </div>
+        <div class="product" id="bass">
+            <div class="level">Rockantansky</div>
+            <h2>$1800</h2>
+            <ol>
+                <li>ASSPERA</li>
+                <li>HATEBREED</li>
+                <li>GHOST</li>
+                <li>5FDP</li>
+                <li>PROPHETS OF RAGE</li>
+            </ol>
+            <button class="btn">Select</button>
+        </div>
+        <div class="product" id="valve">
+            <div class="level">Thunder Dome</div>
+            <h2>$1200</h2>
+            <ol>
+                <li>EL BUEN SALVAJE</li>
+                <li>INSOBRIO</li>
+                <li>MISSON</li>
+                <li>MELIAN</li>
+                <li>HELKER</li>
+            </ol>
+            <button class="btn">Select</button>
+        </div>
+    </section>
+    <footer id="footer">
+        <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <span>All rights reserverd - Move Concerts - Maximus Festival 2017</span>
+    </footer>
+
+</body>
+
+</html>
