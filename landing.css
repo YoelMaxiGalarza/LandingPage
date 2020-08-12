@@ -58,7 +58,7 @@ nav li a {
     width: 13em;
 }
 
-.video-div {
+#video-div {
     display: flex;
     justify-content: center;
     padding: 2rem;
@@ -225,8 +225,13 @@ footer>span {
     nav ul li {
         margin: 1em;
     }
+    #header-img {
+        width: 100%;
+        height: auto;
+        margin-top: 10em;
+    }
     .video-div {
-        margin-top: 15em;
+        margin-top: 3em;
     }
     form {
         display: block;
